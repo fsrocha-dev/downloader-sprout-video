@@ -21,7 +21,7 @@ def getAllFilesFromPlaylist(filepath):
     return final_array
    
 aswner_url =  input("Informe a URL:")
-driver = webdriver.Chrome(headers=headers)
+driver = webdriver.Chrome()
 driver.get(aswner_url)
 playButton = driver.find_element_by_css_selector('.player-big-play-button')
 playButton.click()
